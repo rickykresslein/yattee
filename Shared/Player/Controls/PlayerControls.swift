@@ -480,7 +480,7 @@ struct PlayerControls: View {
         #if os(tvOS)
         .focused($focusedField, equals: .play)
         #else
-        .keyboardShortcut("p")
+        .keyboardShortcut("p", modifiers: [])
         .keyboardShortcut(.space)
         #endif
         .disabled(model.isLoadingVideo)
